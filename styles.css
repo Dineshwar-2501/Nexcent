@@ -4,7 +4,7 @@ body {
     box-sizing: border-box;
     font-family: "MyFont", sans-serif;
     font-weight: 400;
-    background: #F5F7FA;
+    /* background: #F5F7FA; */
 
     margin: 0%;
 }
@@ -64,20 +64,22 @@ body {
 
 
 .title--secondary {
-    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-size: clamp(1.25rem, 3vw, 2.25rem);
 }
 
 
 .description {
     color: #717171;
     font-size: 1rem;
-
+    letter-spacing: 1px;
+    line-height: 20px;
+    /* text-align: justify; */
 }
 
 .description--secondary {
     font-size: 0.9rem;
     color: #F5F7FA;
-
+    /* letter-spacing: 10px; */
 
 }
 
@@ -133,9 +135,16 @@ body {
 }
 
 
-.links{
+.links {
     text-decoration: none;
     color: none;
+}
+
+.vector {
+    object-fit: contain;
+    aspect-ratio: 1;
+    width: 3vw;
+
 }
 
 /* layout */
@@ -153,17 +162,20 @@ body {
 
 .header__action {}
 
-main {
-    margin: 0 auto;
-    max-width: 80vw;
-}
 
 .hero {
+
+    background: #F5F7FA;
+    
+}
+
+.hero__wrapper {
+    margin: 0 auto;
+        max-width: 80vw;
     display: flex;
     align-items: center;
     /* justify-content: center; */
     padding: 96px 30px;
-
 }
 
 .hero__text {
@@ -187,6 +199,9 @@ main {
     flex-direction: column;
     gap: 16px;
     padding: 30px 30px;
+    /* background: #F5F7FA; */
+    margin: 0 auto;
+    max-width: 80vw;
 }
 
 
@@ -205,6 +220,9 @@ main {
 .community {
     text-align: center;
     padding: 10px 30px;
+    /* background: #F5F7FA; */
+    margin: 0 auto;
+    max-width: 80vw;
 }
 
 .community__maincontent {
@@ -224,16 +242,92 @@ main {
     max-width: 15vw;
 }
 
-.information{
+.information {
     display: flex;
     justify-content: space-between;
+    gap: 50px;
+    /* background: #F5F7FA; */
+    margin: 0 auto;
+    max-width: 80vw;
 }
-.information__content{
+
+.information__content {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
     justify-content: center;
     align-items: flex-start;
+    max-width: 50vw;
+}
+
+.nabi {
+
+    background: #F5F7FA;
+    
+
+}
+
+.nabi__wrapper {
+    margin: 0 auto;
+        max-width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 32px;
+    margin-block: 40px;
+    padding: 40px;
+}
+
+.nabi__head {
+    grid-column: span 2;
+    grid-row: span 2;
+    max-width: 28.2vw;
+
+}
+
+.nabi__list {
+
+    grid-column: 3/span 2;
+    grid-row: 1/span 2;
+    display: grid;
+    grid-template-areas: "set1 set2" "set3 set4";
+    gap: 40px;
+}
+
+
+.nabi__item1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    grid-area: "set1";
+}
+
+.nabi__item2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    grid-area: "set2";
+}
+
+.nabi__item3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    grid-area: "set3";
+}
+
+.nabi__item4 {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    grid-area: "set4";
+}
+
+.nabi__text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
 }
 
 
@@ -271,7 +365,7 @@ main {
 
 .footer__subcontent1 {
     grid-column-start: 1/ 3;
-    
+
     display: flex;
     flex-direction: column;
 
@@ -321,7 +415,10 @@ main {
     padding: 15px 80px 15px 11px;
     color: #D9DBE1;
 }
-.footer__input::placeholder {color: #D9DBE1;}
+
+.footer__input::placeholder {
+    color: #D9DBE1;
+}
 
 .footer__button {
     background: #515b60;
