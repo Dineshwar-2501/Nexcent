@@ -126,12 +126,14 @@ body {
 .button--ghost {
     color: #4CAF4F;
     background: white;
+    font-weight: 600;
 
 }
 
 .button--flex {
     display: flex;
     place-items: center;
+    gap: 10px;
 }
 
 
@@ -166,12 +168,12 @@ body {
 .hero {
 
     background: #F5F7FA;
-    
+
 }
 
 .hero__wrapper {
     margin: 0 auto;
-        max-width: 80vw;
+    max-width: 80vw;
     display: flex;
     align-items: center;
     /* justify-content: center; */
@@ -263,13 +265,13 @@ body {
 .nabi {
 
     background: #F5F7FA;
-    
+
 
 }
 
 .nabi__wrapper {
     margin: 0 auto;
-        max-width: 80vw;
+    max-width: 80vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -330,6 +332,25 @@ body {
     padding: 10px;
 }
 
+.tesla {
+    background: #F5F7FA;
+}.tesla__wrapper {
+    display: flex;
+        gap: 64px;
+        margin: 0 auto;
+        max-width: 80vw;
+        padding-block: 32px;
+        margin-block: 32px;
+}
+
+.tesla__image {}
+
+.tesla__content {}
+
+.tesla__client {
+    display: flex;
+    justify-content: space-between;
+}
 
 .footer {}
 
