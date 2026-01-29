@@ -73,6 +73,7 @@ body {
     font-size: 1rem;
     letter-spacing: 1px;
     line-height: 20px;
+    /* margin: 0%; */
     /* text-align: justify; */
 }
 
@@ -127,6 +128,8 @@ body {
     color: #4CAF4F;
     background: white;
     font-weight: 600;
+    margin: 0%;
+    padding: 0%;
 
 }
 
@@ -162,7 +165,10 @@ body {
 
 .header__logo {}
 
-.header__action {}
+.header__actions {
+    display: flex;
+    gap: 30px;
+}
 
 
 .hero {
@@ -334,13 +340,15 @@ body {
 
 .tesla {
     background: #F5F7FA;
-}.tesla__wrapper {
+}
+
+.tesla__wrapper {
     display: flex;
-        gap: 64px;
-        margin: 0 auto;
-        max-width: 80vw;
-        padding-block: 32px;
-        margin-block: 32px;
+    gap: 64px;
+    margin: 0 auto;
+    max-width: 80vw;
+    padding-block: 32px;
+    margin-block: 32px;
 }
 
 .tesla__image {}
@@ -350,6 +358,56 @@ body {
 .tesla__client {
     display: flex;
     justify-content: space-between;
+}
+
+.blog {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 15vh auto;
+    max-width: 80vw;
+}
+
+.blog__main {
+    max-width: 45vw;
+}
+
+.blog__content {
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.blog__sub {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+
+}
+
+.blog__image {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog__text {
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    place-items: center;
+    max-width: 17vw;
+    background: white;
+    box-shadow: 0px 8px 16px 0px #ABBED166;
+    padding-inline: 16px;
+    font-weight: 600;
+    position: absolute;
+    top: 80%;
 }
 
 .footer {}
@@ -405,6 +463,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 10px;
+    position: relative;
 }
 
 
@@ -433,7 +492,8 @@ body {
     position: relative;
     border: none;
     border-radius: 8px;
-    padding: 15px 80px 15px 11px;
+    padding: 15px 10px;
+    width: 80%;
     color: #D9DBE1;
 }
 
@@ -442,8 +502,9 @@ body {
 }
 
 .footer__button {
-    background: #515b60;
+    /* background: #515b60; */
     border: none;
-    transform: translate(-60px, 5px);
+    position: absolute;
+    /* transform: translate(-60px, 5px); */
     cursor: pointer;
 }
