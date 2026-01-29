@@ -1,4 +1,5 @@
-/* root */
+/* #region Root */
+
 body {
 
     box-sizing: border-box;
@@ -50,7 +51,11 @@ body {
     font-display: swap;
 }
 
-/* global */
+/* #endregion */
+
+/* Global  */
+
+/* #region Title */
 .title {
     font-family: "MyFont", sans-serif;
     font-weight: 600;
@@ -67,6 +72,9 @@ body {
     font-size: clamp(1.25rem, 3vw, 2.25rem);
 }
 
+/* #endregion*/
+
+/* #region Description */
 
 .description {
     color: #717171;
@@ -84,11 +92,13 @@ body {
 
 }
 
+/* #endregion*/
+
+/* #region Navigation */
 
 .nav {
     font-family: "MyFont", sans-serif;
-    display: flex;
-    gap: 50px;
+
 
 
 }
@@ -103,6 +113,9 @@ body {
     font-weight: 600;
 }
 
+/* #endregion*/
+
+/* #region Button */
 
 .button {
     padding: 10px 20px;
@@ -139,7 +152,9 @@ body {
     gap: 10px;
 }
 
+/* #endregion*/
 
+/* #region Extras */
 .links {
     text-decoration: none;
     color: none;
@@ -152,7 +167,13 @@ body {
 
 }
 
-/* layout */
+/* #endregion*/
+
+
+/* layout  */
+
+/* #region header */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -163,6 +184,11 @@ body {
     max-width: 80vw;
 }
 
+.header__nav {
+    display: flex;
+    gap: 50px;
+}
+
 .header__logo {}
 
 .header__actions {
@@ -170,7 +196,13 @@ body {
     gap: 30px;
 }
 
+.header__hamburger {
+    display: none;
+}
 
+/* #endregion */
+
+/* #region hero */
 .hero {
 
     background: #F5F7FA;
@@ -184,6 +216,7 @@ body {
     align-items: center;
     /* justify-content: center; */
     padding: 96px 30px;
+    gap: 80px;
 }
 
 .hero__text {
@@ -191,7 +224,7 @@ body {
     flex-direction: column;
     gap: 10px;
     justify-content: start;
-
+    max-width: 50vw;
     align-items: start;
 }
 
@@ -200,6 +233,9 @@ body {
     object-fit: cover;
 }
 
+/* #endregion */
+
+/* #region clients */
 .clients {
     display: flex;
     justify-content: center;
@@ -224,7 +260,9 @@ body {
     object-fit: cover;
 }
 
+/* #endregion */
 
+/* #region community */
 .community {
     text-align: center;
     padding: 10px 30px;
@@ -250,9 +288,14 @@ body {
     max-width: 15vw;
 }
 
+/* #endregion */
+
+
+/* #region information */
 .information {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 50px;
     /* background: #F5F7FA; */
     margin: 0 auto;
@@ -265,9 +308,12 @@ body {
     gap: 16px;
     justify-content: center;
     align-items: flex-start;
-    max-width: 50vw;
+    /* max-width: 50vw; */
 }
 
+/* #endregion */
+
+/* #region nabi */
 .nabi {
 
     background: #F5F7FA;
@@ -338,6 +384,9 @@ body {
     padding: 10px;
 }
 
+/* #endregion */
+
+/*#region Tesla*/
 .tesla {
     background: #F5F7FA;
 }
@@ -351,15 +400,23 @@ body {
     margin-block: 32px;
 }
 
-.tesla__image {}
+.tesla__image {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
 
 .tesla__content {}
 
 .tesla__client {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    /* justify-content: space-between; */
 }
 
+/* #endregion */
+
+/* #region blog */
 .blog {
     display: flex;
     align-items: center;
@@ -391,7 +448,7 @@ body {
 
 .blog__image {
     border-radius: 8px;
-    width: 100%;
+    width: 90%;
     height: auto;
     object-fit: cover;
 }
@@ -407,9 +464,12 @@ body {
     padding-inline: 16px;
     font-weight: 600;
     position: absolute;
-    top: 80%;
+    top: 67%;
 }
 
+/* #endregion */
+
+/* #region footer */
 .footer {}
 
 
@@ -453,7 +513,7 @@ body {
 
 .footer__subcontent2 {
     grid-column-start: 2;
-
+    padding: 0%;
     display: flex;
     gap: 24px;
 }
@@ -502,9 +562,232 @@ body {
 }
 
 .footer__button {
-    /* background: #515b60; */
+    background: none;
     border: none;
     position: absolute;
     /* transform: translate(-60px, 5px); */
+    right: 60px;
+    top: 70px;
     cursor: pointer;
+}
+
+/* #endregion */
+
+/* Responsive */
+
+@media screen and (max-width:992px) {
+
+    /*#region Header*/
+
+    .header {}
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__logo {}
+
+    .header__actions {
+        display: none;
+    }
+
+    .header__hamburger {
+        display: block;
+    }
+
+    /* #endregion */
+
+
+    /*#region Hero*/
+
+    .hero {}
+
+    .hero__wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .hero__text {
+        max-width: 80vw;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .hero__image {}
+
+    /* #endregion */
+
+
+    /*#region Clients*/
+
+    .clients {
+        text-align: justify;
+    }
+
+    .clients__images {}
+
+    .clients__logo {}
+
+    /* #endregion */
+
+
+    /*#region Community*/
+
+    .community {}
+
+    .community__maincontent {
+        max-width: 80vw;
+    }
+
+    .community__sub {
+        flex-direction: column;
+    }
+
+    .community__subcontent {
+        max-width: 50vw;
+    }
+
+    /* #endregion */
+
+
+    /*#region Information*/
+
+    .information {
+        flex-direction: column;
+    }
+
+    .information__content {
+        text-align: justify;
+        /* justify-content: center; */
+        align-items: center;
+        max-width: 70vw;
+    }
+
+    /* #endregion */
+
+
+    /*#region Nabi*/
+
+    .nabi {}
+
+    .nabi__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        place-items: center;
+
+    }
+
+    .nabi__head {
+        max-width: 60vw;
+    }
+
+    .nabi__list {
+        grid-column: 1/span 2;
+        grid-row: 3/span 2;
+        /* grid-template-areas: "set1 ""set2" "set3"" set4"; */
+    }
+
+    .nabi__item1 {}
+
+    .nabi__item2 {}
+
+    .nabi__item3 {}
+
+    .nabi__item4 {}
+
+    .nabi__text {}
+
+    /* #endregion */
+
+
+    /*#region Tesla*/
+
+    .tesla {}
+
+    .tesla__wrapper {
+        flex-direction: column;
+    }
+
+    .tesla__image {}
+
+    .tesla__content {}
+
+    .tesla__client {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* #endregion */
+
+
+    /*#region Blog*/
+
+    .blog {}
+
+    .blog__main {
+        text-align: justify;
+        max-width: 100vw;
+    }
+
+    .blog__content {
+        flex-direction: column;
+        gap: 160px;
+    }
+
+    .blog__sub {}
+
+    .blog__image {}
+
+    .blog__text {
+        max-width: 50vw;
+    }
+
+    /* #endregion */
+
+
+    /*#region Footer*/
+
+    .footer {}
+
+    .footer__main {
+        /* text-align: left; */
+        max-width: 80vw;
+    }
+
+    .footer__sub {}
+
+    .footer__subwrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .footer__subcontent1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .footer__subcontent2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .footer__subcontent2>ul {
+        padding: 0%;
+    }
+
+    .footer__subcontent3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .footer_sublinks {}
+
+    .footer__links {}
+
+    .footer__head {}
+
+    .footer__input {}
+
+    .footer__button {}
+
+    /* #endregion */
 }

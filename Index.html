@@ -47,7 +47,7 @@
                 </svg>
 
             </a>
-            <nav class="nav">
+            <nav class="nav header__nav">
                 <a class="nav__link nav__link--active " href="">Home</a>
                 <a class="nav__link" href="">Service</a>
                 <a class="nav__link" href="">Feature</a>
@@ -58,7 +58,23 @@
             <div class="header__actions">
                 <button class="button button--ghost " type="submit">Login</button>
                 <button class="button button--primary " type="submit">Sign up</button>
+
+
             </div>
+            <div class="header__hamburger">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M4 7L7 7M20 7L11 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round">
+                        </path>
+                        <path d="M20 17H17M4 17L13 17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round">
+                        </path>
+                        <path d="M4 12H7L20 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+                    </g>
+                </svg>
+            </div>
+
         </div>
     </header>
     <main>
@@ -242,7 +258,26 @@
                         </div>
                     </div>
                     <div class="nabi__item3">
-                        <img class="vector" src="./public/hands.png" alt="" />
+                        <!-- <img class="vector" src="./public/hands.png" alt="" /> -->
+                        <svg width="48" height="48" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_18)">
+                                <rect width="27" height="26" fill="none" />
+                                <path
+                                    d="M16.8728 11.1691C16.681 11.1691 16.503 11.1186 16.3448 11.0373V11.0395C16.3448 11.3284 16.2275 11.5997 16.0148 11.803C15.802 12.0067 15.5188 12.119 15.2174 12.119C15.0229 12.119 14.8425 12.0673 14.6827 11.9839C14.6665 12.2482 14.5562 12.4953 14.3594 12.6839C14.1466 12.8877 13.8635 13 13.5619 13C12.9628 13 12.4762 12.549 12.4411 11.9837C12.2558 12.0797 12.0462 12.13 11.83 12.1167C11.2406 12.0797 10.779 11.592 10.779 11.0062V6.15059L10.2017 7.10847C9.98176 7.47484 9.57011 7.70234 9.12689 7.70234C8.91092 7.70234 8.69758 7.64804 8.50863 7.54437C8.27334 7.41374 8.10503 7.20405 8.03504 6.9532C7.96468 6.70218 8.00108 6.43966 8.13711 6.21468C8.13711 6.21468 10.0262 3.08224 10.1415 2.88983C10.1552 2.8609 10.1942 2.77699 10.2274 2.70548C10.2591 2.6372 10.2863 2.56712 10.3124 2.49668C10.882 0.956638 12.2925 0 13.9937 0C16.2027 0 17.9998 1.86617 17.9998 4.16005L18 10.0893C18 10.3779 17.8829 10.649 17.6704 10.853C17.4576 11.0567 17.1745 11.1691 16.8728 11.1691ZM13.9937 0.573635C12.532 0.573635 11.3669 1.36427 10.877 2.68853C10.8457 2.77262 10.813 2.85671 10.7749 2.93865C10.6644 3.17601 10.6644 3.17601 10.6333 3.21014L10.6292 3.20673C10.4749 3.48542 10.0167 4.2453 8.65579 6.50177C8.59987 6.59431 8.58504 6.70177 8.61357 6.80454C8.64246 6.90732 8.7117 6.99392 8.80758 7.04693C9.10518 7.21062 9.51274 7.10497 9.68235 6.82197L10.8192 4.93707C10.8872 4.82477 11.0245 4.7696 11.1562 4.80375C11.2872 4.83735 11.3782 4.95109 11.3782 5.08082V11.0064C11.3782 11.286 11.5985 11.5273 11.8693 11.5444C12.0254 11.5523 12.171 11.5021 12.2804 11.3976C12.3798 11.3023 12.4346 11.1755 12.4346 11.0398V7.1644C12.4346 7.00592 12.5688 6.87744 12.7343 6.87744C12.8998 6.87744 13.0339 7.00574 13.0339 7.1644L13.0337 11.9207C13.0337 12.1996 13.2707 12.4265 13.5619 12.4265C13.7034 12.4265 13.8362 12.374 13.9359 12.2788C14.0353 12.1834 14.0901 12.0562 14.0901 11.9207V7.1644C14.0901 7.00591 14.2241 6.87744 14.3898 6.87744C14.5553 6.87744 14.6894 7.00574 14.6894 7.1644L14.6893 10.9952V11.0398C14.6893 11.3185 14.9262 11.5454 15.2176 11.5454C15.3589 11.5454 15.4914 11.4927 15.5916 11.3972C15.691 11.3021 15.7458 11.1752 15.7458 11.0396V7.1642C15.7458 7.00571 15.8798 6.87724 16.0455 6.87724C16.211 6.87724 16.3451 7.00553 16.3451 7.1642L16.3448 10.0894C16.3448 10.3685 16.5817 10.5955 16.8727 10.5955C17.0144 10.5955 17.1469 10.5428 17.2463 10.4477C17.3461 10.3522 17.4008 10.2249 17.4008 10.0894L17.4009 4.16019C17.4009 2.18278 15.8725 0.573635 13.9937 0.573635Z"
+                                    fill="#4CAF4F" />
+                                <path
+                                    d="M12.8268 17.6293C12.6742 17.5131 12.502 17.4453 12.3269 17.414L12.3282 17.4123C12.5033 17.1825 12.5745 16.8956 12.5284 16.605C12.4826 16.314 12.3255 16.053 12.0858 15.8704C11.931 15.7525 11.7562 15.6844 11.5785 15.6538C11.7259 15.4337 11.7879 15.1704 11.7456 14.901C11.6999 14.61 11.5427 14.3491 11.3029 14.1663C10.8263 13.8032 10.166 13.867 9.79549 14.2954C9.70618 14.1067 9.56998 13.9397 9.38994 13.8193C8.89871 13.4915 8.23603 13.5996 7.88099 14.0656L4.93815 17.9278L5.05944 16.816C5.10656 16.3913 4.91701 15.9608 4.56447 15.6922C4.39268 15.5613 4.19008 15.4752 3.97696 15.4432C3.71063 15.4045 3.44967 15.4693 3.24196 15.6264C3.03386 15.7834 2.90371 16.0143 2.87556 16.2757C2.87571 16.2758 2.47973 19.9122 2.45478 20.1351C2.44814 20.1664 2.42833 20.2568 2.41141 20.3338C2.39525 20.4073 2.37442 20.4795 2.35247 20.5514C1.87221 22.1216 2.41435 23.7374 3.76744 24.7684C5.52455 26.1072 8.08505 25.712 9.47528 23.8874L13.069 19.1712C13.2438 18.9418 13.315 18.6551 13.2696 18.364C13.2238 18.073 13.0667 17.8121 12.8268 17.6293ZM4.11511 24.3121C2.95245 23.4262 2.50494 22.0912 2.91785 20.741C2.94389 20.6551 2.96888 20.5684 2.98825 20.4802C3.0442 20.2244 3.0442 20.2244 3.04011 20.1784L3.03476 20.1786C3.08098 19.8634 3.17705 18.9813 3.46212 16.3617C3.47373 16.2542 3.52706 16.1597 3.61204 16.0952C3.69731 16.031 3.80487 16.0041 3.91326 16.02C4.24918 16.0702 4.50933 16.4012 4.47272 16.7291L4.23465 18.9174C4.22062 19.0479 4.29644 19.175 4.4219 19.2277C4.54644 19.2804 4.68776 19.2451 4.76638 19.1419L8.35766 14.4286C8.52712 14.2062 8.84858 14.1478 9.07431 14.2983C9.2033 14.3866 9.2887 14.5147 9.31234 14.6642C9.33371 14.8003 9.30042 14.9343 9.21819 15.0423L6.86945 18.1248C6.7734 18.2509 6.80225 18.4344 6.93388 18.5347C7.06552 18.635 7.24999 18.6142 7.34615 18.488L10.2286 14.7047C10.3977 14.4829 10.7237 14.446 10.9553 14.6225C11.0678 14.7082 11.1417 14.8305 11.1633 14.9666C11.1845 15.1028 11.151 15.2371 11.0689 15.3449L8.18627 19.1282C8.09022 19.2542 8.11892 19.4376 8.2507 19.538C8.38234 19.6383 8.56681 19.6176 8.66297 19.4914L10.9846 16.4442L11.0116 16.4087C11.1805 16.1871 11.5065 16.1502 11.7383 16.3268C11.8507 16.4124 11.9241 16.5346 11.9459 16.6713C11.9674 16.8072 11.9341 16.9413 11.8519 17.0492L9.50312 20.1318C9.40707 20.2578 9.43577 20.4412 9.56756 20.5416C9.6992 20.6419 9.88363 20.6212 9.97979 20.495L11.7524 18.168C11.9215 17.9461 12.2476 17.9091 12.479 18.0855C12.5917 18.1714 12.6652 18.2935 12.6867 18.4294C12.7081 18.5659 12.6745 18.7002 12.5924 18.808L8.99898 23.5243C7.80055 25.0972 5.60956 25.4508 4.11511 24.3121Z"
+                                    fill="#4CAF4F" />
+                                <path
+                                    d="M15.0792 17.4477C15.218 17.3153 15.3818 17.229 15.5523 17.1786L15.5508 17.1771C15.3515 16.968 15.2491 16.6906 15.2629 16.3967C15.2763 16.1025 15.4037 15.8258 15.6219 15.6178C15.7627 15.4836 15.9289 15.3966 16.1022 15.3466C15.9315 15.1442 15.8409 14.8892 15.8531 14.6169C15.8665 14.3225 15.994 14.0459 16.2122 13.8378C16.6459 13.4244 17.3092 13.4151 17.7247 13.8C17.7927 13.6027 17.9096 13.4216 18.0753 13.2821C18.5274 12.9022 19.198 12.9367 19.6022 13.3607L22.9527 16.8751L22.7096 15.7834C22.616 15.3665 22.757 14.9178 23.0778 14.612C23.2341 14.4629 23.426 14.355 23.6342 14.2997C23.8947 14.2319 24.1612 14.2675 24.385 14.4008C24.6091 14.5339 24.7639 14.749 24.8207 15.0058C24.8205 15.0059 25.6148 18.5765 25.6642 18.7953C25.6742 18.8257 25.7039 18.9133 25.7292 18.988C25.7533 19.0593 25.782 19.1288 25.8117 19.1978C26.4621 20.7055 26.1013 22.3712 24.87 23.545C23.2711 25.0693 20.6827 24.9586 19.0999 23.2984L15.0084 19.0069C14.8093 18.7981 14.707 18.5211 14.7201 18.2267C14.7335 17.9324 14.8609 17.6558 15.0792 17.4477ZM24.4742 23.1298C25.5322 22.1212 25.8298 20.7451 25.2707 19.4485C25.2353 19.3661 25.2009 19.2827 25.172 19.1971C25.0882 18.949 25.0882 18.949 25.0872 18.9028L25.0925 18.9024C25.0118 18.5943 24.8191 17.7281 24.2472 15.1559C24.2238 15.0503 24.1604 14.9623 24.0688 14.9076C23.977 14.8531 23.8671 14.8382 23.7611 14.866C23.4328 14.9529 23.2107 15.3106 23.2832 15.6324L23.761 17.7812C23.7893 17.9094 23.7279 18.0441 23.609 18.1102C23.4911 18.1763 23.3467 18.1568 23.2572 18.0629L19.1684 13.774C18.9755 13.5716 18.6496 13.549 18.4418 13.7234C18.3233 13.8254 18.2526 13.9622 18.2455 14.1134C18.2393 14.251 18.2871 14.3806 18.3808 14.4788L21.0549 17.2837C21.1642 17.3984 21.1558 17.584 21.036 17.6982C20.9162 17.8124 20.7306 17.8121 20.6211 17.6973L17.3393 14.2546C17.1468 14.0527 16.8187 14.052 16.608 14.253C16.5056 14.3506 16.4456 14.4802 16.4392 14.6179C16.433 14.7556 16.4812 14.8854 16.5747 14.9835L19.8566 18.4261C19.966 18.5408 19.9577 18.7262 19.8377 18.8405C19.718 18.9547 19.5323 18.9544 19.4228 18.8396L16.7796 16.0667L16.7489 16.0345C16.5566 15.8328 16.2284 15.832 16.0175 16.0331C15.9153 16.1306 15.8557 16.2602 15.8492 16.3985C15.8428 16.5359 15.8907 16.6655 15.9842 16.7637L18.6584 19.5687C18.7677 19.6834 18.7594 19.8688 18.6395 19.9831C18.5197 20.0973 18.3341 20.097 18.2246 19.9822L16.2064 17.8647C16.0138 17.6627 15.6857 17.662 15.4751 17.8628C15.3725 17.9605 15.313 18.09 15.3066 18.2275C15.3003 18.3655 15.3486 18.4953 15.4421 18.5934L19.5333 22.885C20.8977 24.3162 23.1143 24.4263 24.4742 23.1298Z"
+                                    fill="#4CAF4F" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_18">
+                                    <rect width="27" height="26" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
 
 
 
@@ -285,31 +320,39 @@
         </section>
         <section class="tesla">
             <div class="tesla__wrapper">
-                <img class="tesla__image" src="./public/Tesla.png" alt="">
+                <img src="./public/Tesla.png" alt="">
                 <div class="tesla__content">
-                    <p class="description">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui,
+                    <p class="description">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem
+                        dui,
                         vel rutrum risus tincidunt ullamcorper.
-                        Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie
+                        Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut
+                        molestie
                         arcu, at hendrerit
-                        elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed
+                        elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus
+                        sed
                         augue ultrices, quis
-                        tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti.
+                        tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse
+                        potenti.
                         Quisque malesuada
-                        enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero
+                        enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur
+                        libero
                         condimentum id.
                         Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
                     <h1 class="title" style="color: #4CAF4F; font-size: 1.5rem;">Tim Smith</h1>
                     <p class="description" style="color: #89939E;">British Dragon Boat Racing Association</p>
                     <div class="tesla__client">
-                        <img class="vector" src="./public/clients/Logo.png" alt="">
-                        <img class="vector" src="./public/clients/Logo-1.png" alt="">
-                        <img class="vector" src="./public/clients/Logo-2.png" alt="">
-                        <img class="vector" src="./public/clients/Logo-3.png" alt="">
-                        <img class="vector" src="./public/clients/Logo-4.png" alt="">
-                        <img class="vector" src="./public/clients/Logo-5.png" alt="">
+                        <div class="tesla__image">
+                            <img class="vector" src="./public/clients/Logo.png" alt="">
+                            <img class="vector" src="./public/clients/Logo-1.png" alt="">
+                            <img class="vector" src="./public/clients/Logo-2.png" alt="">
+                            <img class="vector" src="./public/clients/Logo-3.png" alt="">
+                            <img class="vector" src="./public/clients/Logo-4.png" alt="">
+                            <img class="vector" src="./public/clients/Logo-5.png" alt="">
+                        </div>
                         <button type="button" class="button button--ghost button--flex">
                             <p>Meet all customers</p>
-                            <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="17" height="10" viewBox="0 0 17 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M11.75 8.75L15.0429 5.45711C15.4334 5.06658 15.4334 4.43342 15.0429 4.04289L11.75 0.75M14.75 4.75L0.75 4.75"
                                     stroke="#4CAF4F" stroke-width="1.5" stroke-linecap="round" />
@@ -322,47 +365,55 @@
         <section class="blog">
             <div class="blog__main">
                 <h1 class="title title--secondary">Caring is the new marketing</h1>
-                <p class="description">The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the
-                community, read about how our community are increasing their membership income and lot's more.​</p>
+                <p class="description">The Nexcent blog is the best place to read about the latest membership insights,
+                    trends and more. See who's joining the
+                    community, read about how our community are increasing their membership income and lot's more.​</p>
             </div>
             <div class="blog__content">
                 <div class="blog__sub">
                     <img class="blog__image" src="./public/blog1.jpg" alt="">
                     <div class="blog__text">
                         <p class="description">Creating Streamlined Safeguarding Processes with OneRen</p>
-                        <button type="button" class="button button--ghost button--flex"><p>Readmore</p> <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M11.75 8.75L15.0429 5.45711C15.4334 5.06658 15.4334 4.43342 15.0429 4.04289L11.75 0.75M14.75 4.75L0.75 4.75"
-            stroke="#4CAF4F" stroke-width="1.5" stroke-linecap="round" />
-    </svg>
-        
-        </button>
+                        <button type="button" class="button button--ghost button--flex">
+                            <p>Readmore</p> <svg width="17" height="10" viewBox="0 0 17 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.75 8.75L15.0429 5.45711C15.4334 5.06658 15.4334 4.43342 15.0429 4.04289L11.75 0.75M14.75 4.75L0.75 4.75"
+                                    stroke="#4CAF4F" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+
+                        </button>
                     </div>
                 </div>
                 <div class="blog__sub">
                     <img class="blog__image" src="./public/blog2.jpg" alt="">
                     <div class="blog__text">
-                        <p class="description">What are your safeguarding responsibilities and how can you manage them?</p>
-                        <button type="button" class="button button--ghost button--flex"><p>Readmore</p> <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M11.75 8.75L15.0429 5.45711C15.4334 5.06658 15.4334 4.43342 15.0429 4.04289L11.75 0.75M14.75 4.75L0.75 4.75"
-            stroke="#4CAF4F" stroke-width="1.5" stroke-linecap="round" />
-    </svg>
-        
-        </button>
+                        <p class="description">What are your safeguarding responsibilities and how can you manage them?
+                        </p>
+                        <button type="button" class="button button--ghost button--flex">
+                            <p>Readmore</p> <svg width="17" height="10" viewBox="0 0 17 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.75 8.75L15.0429 5.45711C15.4334 5.06658 15.4334 4.43342 15.0429 4.04289L11.75 0.75M14.75 4.75L0.75 4.75"
+                                    stroke="#4CAF4F" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+
+                        </button>
                     </div>
                 </div>
                 <div class="blog__sub">
                     <img class="blog__image" src="./public/blog3.jpg" alt="">
                     <div class="blog__text">
                         <p class="description">Revamping the Membership Model with Triathlon Australia</p>
-                        <button type="button" class="button button--ghost button--flex"><p>Readmore</p> <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M11.75 8.75L15.0429 5.45711C15.4334 5.06658 15.4334 4.43342 15.0429 4.04289L11.75 0.75M14.75 4.75L0.75 4.75"
-            stroke="#4CAF4F" stroke-width="1.5" stroke-linecap="round" />
-    </svg>
-        
-        </button>
+                        <button type="button" class="button button--ghost button--flex">
+                            <p>Readmore</p> <svg width="17" height="10" viewBox="0 0 17 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.75 8.75L15.0429 5.45711C15.4334 5.06658 15.4334 4.43342 15.0429 4.04289L11.75 0.75M14.75 4.75L0.75 4.75"
+                                    stroke="#4CAF4F" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+
+                        </button>
                     </div>
                 </div>
             </div>
@@ -495,11 +546,12 @@
                         <div>
                             <input class="footer__input " type="email" title="Email" name="" id=""
                                 placeholder="Your email address">
-                            <button class="footer__button " type="submit" title="send"><svg width="17" height="17"
-                                    viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button class="footer__button " type="submit" title="send">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M16.2803 0.219691C16.4841 0.423419 16.5531 0.725843 16.4579 0.997784L11.2079 15.9978C11.1063 16.288 10.8378 16.4869 10.5306 16.4994C10.2233 16.5119 9.93954 16.3356 9.81465 16.0546L6.9318 9.56822L0.4454 6.68538C0.16439 6.56049 -0.0119081 6.27671 0.000627214 5.96945C0.0131626 5.66219 0.211991 5.39371 0.502241 5.29213L15.5022 0.0421271C15.7742 -0.0530519 16.0766 0.0159624 16.2803 0.219691ZM8.39456 9.16612L10.4171 13.7167L13.9564 3.60429L8.39456 9.16612ZM12.8957 2.54362L2.78331 6.08297L7.3339 8.10546L12.8957 2.54362Z"
-                                        fill="white" />
+                                        fill="#D9DBE1" />
                                 </svg>
 
                             </button>
