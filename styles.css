@@ -53,7 +53,7 @@ body {
 
 /* #endregion */
 
-/* Global  */
+/* #region Global  */
 
 /* #region Title */
 .title {
@@ -143,6 +143,7 @@ body {
     font-weight: 600;
     margin: 0%;
     padding: 0%;
+    /* width: 20px; */
 
 }
 
@@ -168,9 +169,10 @@ body {
 }
 
 /* #endregion*/
+/* #endregion*/
 
 
-/* layout  */
+/* #region layout  */
 
 /* #region header */
 
@@ -251,8 +253,8 @@ body {
 
 
 .clients__images {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     width: 100%;
 }
 
@@ -401,8 +403,8 @@ body {
 }
 
 .tesla__image {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     width: 70%;
 }
 
@@ -572,8 +574,12 @@ body {
 }
 
 /* #endregion */
+/* #endregion */
 
-/* Responsive */
+/* #region Responsive */
+
+
+
 
 @media screen and (max-width:992px) {
 
@@ -707,13 +713,16 @@ body {
         flex-direction: column;
     }
 
-    .tesla__image {}
+    .tesla__image {
+        width: 100%;
+    }
 
     .tesla__content {}
 
     .tesla__client {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     /* #endregion */
@@ -791,3 +800,14 @@ body {
 
     /* #endregion */
 }
+
+/* #endregion */
+
+
+
+
+
+
+
+
+

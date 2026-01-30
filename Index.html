@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <title>Nexcent</title>
+
 </head>
 
 <body>
@@ -62,51 +65,106 @@
 
             </div>
             <div class="header__hamburger">
-                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path d="M4 7L7 7M20 7L11 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round">
-                        </path>
-                        <path d="M20 17H17M4 17L13 17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round">
-                        </path>
-                        <path d="M4 12H7L20 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
-                    </g>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 6L4 6" stroke="#717171" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M20 12L4 12" stroke="#717171" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M20 18H4" stroke="#717171" stroke-width="1.5" stroke-linecap="round" />
                 </svg>
+
             </div>
 
         </div>
     </header>
     <main>
         <section class="hero">
+            <div class="swiper swiper-hero">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="hero__wrapper">
+                            <div class="hero__text">
+                                <h1 class="title title--primary">Lessons and insights <span style="color: #4CAF4F;">from
+                                        8
+                                        years</span>
+                                </h1>
+                                <p class=" description">Where to grow your business as a photographer: site or social
+                                    media?</p>
+                                <button type="button" class="button button--big">Register</button>
+                            </div>
+                            <div class="hero__image">
+                                <img src="./public/heroImage.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero__wrapper">
+                            <div class="hero__text">
+                                <h1 class="title title--primary">Lessons and insights <span style="color: #4CAF4F;">from
+                                        8
+                                        years</span>
+                                </h1>
+                                <p class=" description">Where to grow your business as a photographer: site or social
+                                    media?</p>
+                                <button type="button" class="button button--big">Register</button>
+                            </div>
+                            <div class="hero__image">
+                                <img src="./public/heroImage.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero__wrapper">
+                            <div class="hero__text">
+                                <h1 class="title title--primary">Lessons and insights <span style="color: #4CAF4F;">from
+                                        8
+                                        years</span>
+                                </h1>
+                                <p class=" description">Where to grow your business as a photographer: site or social
+                                    media?</p>
+                                <button type="button" class="button button--big">Register</button>
+                            </div>
+                            <div class="hero__image">
+                                <img src="./public/heroImage.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="hero__wrapper">
-                <div class="hero__text">
-                    <h1 class="title title--primary">Lessons and insights <span style="color: #4CAF4F;">from 8
-                            years</span>
-                    </h1>
-                    <p class=" description">Where to grow your business as a photographer: site or social media?</p>
-                    <button type="button" class="button button--big">Register</button>
                 </div>
-                <div class="hero__image">
-                    <img src="./public/heroImage.png" alt="" />
-                </div>
+                <button type="button" title="pause" id="togglePlay" class=" button button--ghost"></button>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
+
 
         </section>
         <section class="clients">
 
             <h1 class=" title title--secondary">Our Clients</h1>
             <p class=" description ">We have been working with some Fortune 500+ clients</p>
-            <div class="clients__images">
-                <img class="clients__logo" src="./public/clients/Logo-1.png" alt="" />
-                <img class="clients__logo" src="./public/clients/Logo-2.png" alt="" />
-                <img class="clients__logo" src="./public/clients/Logo-3.png" alt="" />
-                <img class="clients__logo" src="./public/clients/Logo-4.png" alt="" />
-                <img class="clients__logo" src="./public/clients/Logo-5.png" alt="" />
 
-                <img class="clients__logo" src="./public/clients/Logo-6.png" alt="" />
-                <img class="clients__logo" src="./public/clients/Logo.png" alt="" />
+            <div class="clients__images">
+                <div class="swiper swiper-marquee">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="clients__logo" src="./public/clients/Logo-1.png" alt="" />
+                        </div>
+                        <div class="swiper-slide"><img class="clients__logo" src="./public/clients/Logo-2.png" alt="" />
+                        </div>
+                        <div class="swiper-slide"><img class="clients__logo" src="./public/clients/Logo-3.png" alt="" />
+                        </div>
+                        <div class="swiper-slide"><img class="clients__logo" src="./public/clients/Logo-4.png" alt="" />
+                        </div>
+                        <div class="swiper-slide"><img class="clients__logo" src="./public/clients/Logo-5.png" alt="" />
+                        </div>
+
+                        <div class="swiper-slide"><img class="clients__logo" src="./public/clients/Logo-6.png" alt="" />
+                        </div>
+                        <div class="swiper-slide"><img class="clients__logo" src="./public/clients/Logo.png" alt="" />
+                        </div>
+
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -342,12 +400,22 @@
                     <p class="description" style="color: #89939E;">British Dragon Boat Racing Association</p>
                     <div class="tesla__client">
                         <div class="tesla__image">
-                            <img class="vector" src="./public/clients/Logo.png" alt="">
-                            <img class="vector" src="./public/clients/Logo-1.png" alt="">
-                            <img class="vector" src="./public/clients/Logo-2.png" alt="">
-                            <img class="vector" src="./public/clients/Logo-3.png" alt="">
-                            <img class="vector" src="./public/clients/Logo-4.png" alt="">
-                            <img class="vector" src="./public/clients/Logo-5.png" alt="">
+                            <div class="swiper swiper-responsive">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img class="vector" src="./public/clients/Logo.png"
+                                            alt=""></div>
+                                    <div class="swiper-slide"><img class="vector" src="./public/clients/Logo-1.png"
+                                            alt=""></div>
+                                    <div class="swiper-slide"><img class="vector" src="./public/clients/Logo-2.png"
+                                            alt=""></div>
+                                    <div class="swiper-slide"><img class="vector" src="./public/clients/Logo-3.png"
+                                            alt=""></div>
+                                    <div class="swiper-slide"><img class="vector" src="./public/clients/Logo-4.png"
+                                            alt=""></div>
+                                    <div class="swiper-slide"><img class="vector" src="./public/clients/Logo-5.png"
+                                            alt=""></div>
+                                </div>
+                            </div>
                         </div>
                         <button type="button" class="button button--ghost button--flex">
                             <p>Meet all customers</p>
@@ -562,6 +630,20 @@
 
         </div>
     </footer>
+    <!-- <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div> -->
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<script defer src="script.js"></script>
 
 </html>
